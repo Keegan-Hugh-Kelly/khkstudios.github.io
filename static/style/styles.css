@@ -147,15 +147,28 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 80%;
-    margin: 0 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+.hero-content p {
+    font-family: "Supreme";
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    text-align: right;
 }
 
 .hero-content h4 {
     font-family: "Supreme";
     font-size: 1.5rem;
     font-weight: 100;
-    margin-bottom: 0px;
+    margin-bottom: -70px;
 }
 
 .hero-content h1 {
@@ -163,10 +176,11 @@ nav a:hover {
     font-size: 5rem;
     font-weight: 600;
     margin-bottom: 20px;
+    max-width: 80%;
 }
 
 .hero-button {
-    width: 400px;
+    width: 60%;
     height: 40px;
     background-color: #232323;
     color: #f8f5f2;
@@ -174,7 +188,7 @@ nav a:hover {
     border: 1px solid #f8f5f2;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1rem;
     background-image: linear-gradient(45deg, #603363, #e6a768, #603363);
     background-size: 200% 200%;
     animation: buttonBackgroundAnimation 10s infinite;
@@ -192,6 +206,84 @@ nav a:hover {
     100% {
         background-position: 0% 0%;
     }
+}
+
+.about-me {
+    padding: 50px 0;
+    background-color: #f8f5f2;
+    text-align: center;
+}
+
+.about-me-content {
+    width: 100%;
+    margin: 0;
+}
+
+.about-me-title {
+    background-color: #f8f5f2;
+    overflow: hidden; 
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-content h2 {
+    font-family: "Panchang";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.about-me-link {
+    font-family: "Supreme";
+    font-size: 2rem;
+    font-weight: 100;
+    margin-right: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #232323;
+}
+
+.about-me p {
+    font-family: "Supreme";
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.about-me-content h2,
+.about-me-content p {
+    color: #232323;
+}
+
+.skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 50px 50px 0px;
+}
+
+.skill-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #232323;
+    border-radius: 15px;
+    background-color: #f8f5f2;
+    color: #232323;
+    cursor: pointer;
+    font-family: "Supreme";
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-buttons button:hover {
+    background-color: #232323;
+    color: #f8f5f2;
 }
 
 .contact-bar {
