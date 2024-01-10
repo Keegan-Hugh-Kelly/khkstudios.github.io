@@ -175,7 +175,7 @@ nav a:hover {
     font-family: "Panchang";
     font-size: 5rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     max-width: 80%;
 }
 
@@ -295,6 +295,63 @@ nav a:hover {
     padding: 50px;
 }
 
+.services {
+    padding: 50px 0;
+    background-color: #f8f5f2;
+    text-align: center;
+}
+
+.services-content {
+    width: 100%;
+    margin: 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-content h2 {
+    font-family: "Panchang";
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.services-link {
+    font-family: "Supreme";
+    font-size: 2rem;
+    font-weight: 100;
+    margin-right: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #232323;
+}
+
+.service-features p {
+    font-family: "Supreme";
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.service-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 50px 50px 0px;
+    font-family: "Panchang";
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.services-content h2 {
+    color: #232323;
+}
+
 .contact-bar-content-left {
     max-width: 60%;
 }
@@ -337,8 +394,96 @@ nav a:hover {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f5f2;
+    color: #232323;
+    padding: 15px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-left h1 {
+    font-family: "Panchang";
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.footer-social-link {
+    color: #232323;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-family: "supreme";
+    font-size: 1.25rem;
+}
+
+.footer-social-link:hover {
+    color: #603363;
+}
+
+.footer-center {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.footer-center-column {
+    text-align: center;
+}
+
+.footer-center h2 {
+    font-family: "Panchang";
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #232323;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center li {
+    margin-bottom: 5px;
+}
+
+.footer-center a {
     color: #232323;
     font-family: "Supreme";
+    text-decoration: none;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right button {
+    background-color: #f8f5f2;
+    color: #232323;
+    padding: 10px 20px;
+    border: 1px solid #232323;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Panchang";
+    font-size: 1em;
+    margin-bottom: 0;
+    transition: all ease 0.3s;
+}
+
+.footer-right button:hover {
+    background-color: #232323;
+    color: #f8f5f2;
+}
+
+.footer-email {
+    font-family: "Supreme";
+    font-size: 0.8rem;
+    color: #232323;
     text-align: center;
-    padding: 15px;
 }
