@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Panchang";
+    src: url("../fonts/Panchang_Complete/Fonts/WEB/fonts/Panchang-Variable.ttf");
+}
+
+@font-face {
+    font-family: "Supreme";
+    src: url("../fonts/Supreme_Complete/Fonts/WEB/fonts/Supreme-Variable.ttf");
+}
+
+/* Existing CSS... */
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .contact-bar {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .contact-bar-content-left,
+    .contact-bar-content-right {
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact-bar-content-right h1 {
+        margin: 0;
+    }
+}
+
+/* Media Query for Larger Desktop Screens */
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        margin: 0 5rem;
+    }
+
+    .hero-content {
+        max-width: 60%;
+        margin: 0 30px;
+    }
+
+    .contact-bar {
+        padding: 50px;
+    }
+
+    .contact-bar-content-left,
+    .contact-bar-content-right {
+        max-width: 60%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #232323;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 5rem;
+}
+
+.nav-title {
+    font-family: "Panchang";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family: "Supreme";
+    font-size: 1rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    border: 1px solid #232323;
+    border-radius: 15px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 1px solid #232323;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 50px 0;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 80%;
+    margin: 0 30px;
+}
+
+.hero-content h4 {
+    font-family: "Supreme";
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.hero-content h1 {
+    font-family: "Panchang";
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    width: 400px;
+    height: 40px;
+    background-color: #232323;
+    color: #f8f5f2;
+    padding: 10px 20px;
+    border: 1px solid #f8f5f2;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    background-image: linear-gradient(45deg, #603363, #e6a768, #603363);
+    background-size: 200% 200%;
+    animation: buttonBackgroundAnimation 10s infinite;
+}
+
+@keyframes buttonBackgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.contact-bar {
+    background-color: #232323;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-bar-content-left {
+    max-width: 60%;
+}
+
+.contact-bar-content-left h2 {
+    font-family: "Panchang";
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-bar-content-left p {
+    font-family: "Supreme";
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-bar-button {
+    background-color: #232323;
+    color: #f8f5f2;
+    padding: 10px 20px;
+    border: 1px solid #f8f5f2;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Panchang";
+    font-size: 1em;
+}
+
+.contact-bar-content-right h1 {
+    font-family: "Panchang";
+    font-weight: 100;
+    font-size: 3rem;
+    margin: 0 10rem;
+}
+
+.contact-bar-content-right a {
+    color: #f8f5f2;
+    text-decoration: none;
+}
+
+.footer {
+    color: #232323;
+    font-family: "Supreme";
+    text-align: center;
+    padding: 15px;
+}
