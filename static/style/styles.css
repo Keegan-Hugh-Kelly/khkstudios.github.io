@@ -1,489 +1,582 @@
 @font-face {
-    font-family: "Panchang";
-    src: url("../fonts/Panchang_Complete/Fonts/WEB/fonts/Panchang-Variable.ttf");
+  font-family: "Panchang";
+  src: url("../fonts/Panchang_Complete/Fonts/WEB/fonts/Panchang-Variable.ttf");
 }
 
 @font-face {
-    font-family: "Supreme";
-    src: url("../fonts/Supreme_Complete/Fonts/WEB/fonts/Supreme-Variable.ttf");
+  font-family: "Supreme";
+  src: url("../fonts/Supreme_Complete/Fonts/WEB/fonts/Supreme-Variable.ttf");
 }
 
-/* Existing CSS... */
-
-/* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        margin: 0;
-    }
+  .navbar {
+    flex-direction: column;
+    margin: 0;
+  }
 
-    .nav-links {
-        margin-top: 10px;
-        text-align: center;
-    }
+  .nav-links {
+    margin-top: 10px;
+    text-align: center;
+  }
 
-    .nav-link {
-        margin: 5px 0;
-    }
+  .nav-link {
+    margin: 5px 0;
+  }
 
-    .cta-button {
-        margin-top: 10px;
-    }
+  .cta-button {
+    margin-top: 10px;
+  }
 
-    .hero-content {
-        max-width: 100%;
-        margin: 0 20px;
-    }
+  .hero-content {
+    max-width: 100%;
+    margin: 0 20px;
+  }
 
-    .hero-content h1 {
-        font-size: 3.5rem;
-    }
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
 
-    .hero-button {
-        width: 100%;
-    }
+  .hero-button {
+    width: 100%;
+  }
 
-    .contact-bar {
-        flex-direction: column;
-        padding: 30px;
-    }
+  .contact-bar {
+    flex-direction: column;
+    padding: 30px;
+  }
 
-    .contact-bar-content-left,
-    .contact-bar-content-right {
-        max-width: 100%;
-        margin: 0;
-        text-align: center;
-    }
+  .contact-bar-content-left,
+  .contact-bar-content-right {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
 
-    .contact-bar-content-right h1 {
-        margin: 0;
-    }
+  .contact-bar-content-right h1 {
+    margin: 0;
+  }
 }
 
 /* Media Query for Larger Desktop Screens */
 @media only screen and (min-width: 1200px) {
-    .navbar {
-        margin: 0 5rem;
-    }
+  .navbar {
+    margin: 0 5rem;
+  }
 
-    .hero-content {
-        max-width: 60%;
-        margin: 0 30px;
-    }
+  .hero-content {
+    max-width: 60%;
+    margin: 0 30px;
+  }
 
-    .contact-bar {
-        padding: 50px;
-    }
+  .contact-bar {
+    padding: 50px;
+  }
 
-    .contact-bar-content-left,
-    .contact-bar-content-right {
-        max-width: 60%;
-    }
+  .contact-bar-content-left,
+  .contact-bar-content-right {
+    max-width: 60%;
+  }
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f5f2;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f5f2;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 nav a {
-    color: #232323;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+  color: #232323;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 nav a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 5rem;
 }
 
 .nav-title {
-    font-family: "Panchang";
-    font-size: 2rem;
-    font-weight: bold;
+  font-family: "Panchang";
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .nav-link {
-    font-family: "Supreme";
-    font-size: 1rem;
-    font-weight: 300;
-    border: 1px solid transparent;
-    border-radius: 15px;
-    transition: 0.5s ease;
+  font-family: "Supreme";
+  font-size: 1rem;
+  font-weight: 300;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.5s ease;
 }
 
 .nav-link:hover {
-    cursor: pointer;
-    border: 1px solid #232323;
-    border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid #232323;
+  border-radius: 15px;
 }
 
 .cta-button {
-    padding: 10px 20px;
-    border: 1px solid #232323;
-    border-radius: 15px;
-    cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #232323;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .hero {
-    padding: 50px 0;
-    text-align: left;
+  padding: 50px 0;
+  text-align: left;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 0 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 20px;
 }
 
 .hero-content p {
-    font-family: "Supreme";
-    font-size: 1.25rem;
-    font-weight: 100;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    text-align: right;
+  font-family: "Supreme";
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  text-align: right;
 }
 
 .hero-content h4 {
-    font-family: "Supreme";
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-bottom: -70px;
+  font-family: "Supreme";
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: -70px;
 }
 
 .hero-content h1 {
-    font-family: "Panchang";
-    font-size: 5rem;
-    font-weight: 600;
-    margin-bottom: 50px;
-    max-width: 80%;
+  font-family: "Panchang";
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  max-width: 80%;
 }
 
 .hero-button {
-    width: 60%;
-    height: 40px;
-    background-color: #232323;
-    color: #f8f5f2;
-    padding: 10px 20px;
-    border: 1px solid #f8f5f2;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 1rem;
-    background-image: linear-gradient(45deg, #603363, #e6a768, #603363);
-    background-size: 200% 200%;
-    animation: buttonBackgroundAnimation 10s infinite;
+  width: 60%;
+  height: 40px;
+  background-color: #232323;
+  color: #f8f5f2;
+  padding: 10px 20px;
+  border: 1px solid #f8f5f2;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-image: linear-gradient(45deg, #603363, #e6a768, #603363);
+  background-size: 200% 200%;
+  animation: buttonBackgroundAnimation 10s infinite;
 }
 
 @keyframes buttonBackgroundAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
 
-    50% {
-        background-position: 100% 100%;
-    }
+  50% {
+    background-position: 100% 100%;
+  }
 
-    100% {
-        background-position: 0% 0%;
-    }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .about-me {
-    padding: 50px 0;
-    background-color: #f8f5f2;
-    text-align: center;
+  padding: 50px 0;
+  background-color: #f8f5f2;
+  text-align: center;
 }
 
 .about-me-content {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .about-me-title {
-    background-color: #f8f5f2;
-    overflow: hidden; 
+  background-color: #f8f5f2;
+  overflow: hidden;
 }
 
 .about-me-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-me-content h2 {
-    font-family: "Panchang";
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 20px;
-    text-align: left;
+  font-family: "Panchang";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: left;
 }
 
 .about-me-link {
-    font-family: "Supreme";
-    font-size: 2rem;
-    font-weight: 100;
-    margin-right: 20px;
-    text-align: left;
-    text-decoration: none;
-    color: #232323;
+  font-family: "Supreme";
+  font-size: 2rem;
+  font-weight: 100;
+  margin-right: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #232323;
 }
 
 .about-me p {
-    font-family: "Supreme";
-    font-size: 3rem;
-    font-weight: 200;
-    margin: 20px 40px;
-    text-align: center;
+  font-family: "Supreme";
+  font-size: 3rem;
+  font-weight: 200;
+  margin: 20px 40px;
+  text-align: center;
 }
 
 .about-me-content h2,
 .about-me-content p {
-    color: #232323;
+  color: #232323;
 }
 
 .skill-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 50px 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 50px 50px 0px;
 }
 
 .skill-buttons button {
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #232323;
-    border-radius: 15px;
-    background-color: #f8f5f2;
-    color: #232323;
-    cursor: pointer;
-    font-family: "Supreme";
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #232323;
+  border-radius: 15px;
+  background-color: #f8f5f2;
+  color: #232323;
+  cursor: pointer;
+  font-family: "Supreme";
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .skill-buttons button:hover {
-    background-color: #232323;
-    color: #f8f5f2;
+  background-color: #232323;
+  color: #f8f5f2;
+}
+
+.projects {
+  padding: 50px 0;
+  background-color: #f8f5f2;
+  text-align: center;
+}
+
+.projects-content {
+  width: 100%;
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-container h2 {
+  font-family: "Panchang";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.projects-container a {
+  font-family: "Supreme";
+  font-size: 2rem;
+  font-weight: 100;
+  margin-right: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #232323;
+}
+
+.projects-cards {
+  margin: 50px 50px 50px 50px;
+}
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-grid-item {
+  position: relative;
+  border: 1px solid #232323;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  order: random;
+}
+
+.project-grid-item:hover {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-grid-item:nth-child(6) {
+  grid-column: span 3;
+}
+
+.project-grid-item:nth-child(1),
+.project-grid-item:nth-child(8) {
+  grid-column: span 2;
+}
+
+.grid-item-title {
+  font-family: "Panchang";
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  margin: 0;
+  text-align: left;
+}
+
+.grid-item-description {
+  font-family: "Supreme";
+  font-size: 1rem;
+  font-weight: 100;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  margin: 0;
+  text-align: right;
 }
 
 .contact-bar {
-    background-color: #232323;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+  background-color: #232323;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 
 .services {
-    padding: 50px 0;
-    background-color: #f8f5f2;
-    text-align: center;
+  padding: 50px 0;
+  background-color: #f8f5f2;
+  text-align: center;
 }
 
 .services-content {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .services-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .services-content h2 {
-    font-family: "Panchang";
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 20px;
-    text-align: left;
+  font-family: "Panchang";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: left;
 }
 
 .services-link {
-    font-family: "Supreme";
-    font-size: 2rem;
-    font-weight: 100;
-    margin-right: 20px;
-    text-align: left;
-    text-decoration: none;
-    color: #232323;
+  font-family: "Supreme";
+  font-size: 2rem;
+  font-weight: 100;
+  margin-right: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #232323;
 }
 
 .service-features p {
-    font-family: "Supreme";
-    font-size: 1.5rem;
-    font-weight: 200;
-    margin: 20px 40px;
-    text-align: center;
+  font-family: "Supreme";
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 20px 40px;
+  text-align: center;
 }
 
 .service-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 50px 50px 0px;
-    font-family: "Panchang";
-    font-weight: 500;
-    font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 50px 50px 0px;
+  font-family: "Panchang";
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .services-content h2 {
-    color: #232323;
+  color: #232323;
 }
 
 .contact-bar-content-left {
-    max-width: 60%;
+  max-width: 60%;
 }
 
 .contact-bar-content-left h2 {
-    font-family: "Panchang";
-    font-weight: 100;
-    font-size: 2rem;
-    margin-bottom: 10px;
+  font-family: "Panchang";
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .contact-bar-content-left p {
-    font-family: "Supreme";
-    font-weight: 100;
-    font-size: 1rem;
-    margin-bottom: 20px;
+  font-family: "Supreme";
+  font-weight: 100;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .contact-bar-button {
-    background-color: #232323;
-    color: #f8f5f2;
-    padding: 10px 20px;
-    border: 1px solid #f8f5f2;
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: "Panchang";
-    font-size: 1em;
+  background-color: #232323;
+  color: #f8f5f2;
+  padding: 10px 20px;
+  border: 1px solid #f8f5f2;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Panchang";
+  font-size: 1em;
 }
 
 .contact-bar-content-right h1 {
-    font-family: "Panchang";
-    font-weight: 100;
-    font-size: 3rem;
-    margin: 0 10rem;
+  font-family: "Panchang";
+  font-weight: 100;
+  font-size: 3rem;
+  margin: 0 10rem;
 }
 
 .contact-bar-content-right a {
-    color: #f8f5f2;
-    text-decoration: none;
+  color: #f8f5f2;
+  text-decoration: none;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f5f2;
-    color: #232323;
-    padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f5f2;
+  color: #232323;
+  padding: 15px;
 }
 
-.footer-left, .footer-center, .footer-right {
-    flex: 1;
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
 }
 
 .footer-left h1 {
-    font-family: "Panchang";
-    font-size: 3rem;
-    margin-top: 0;
-    margin-bottom: 50px;
+  font-family: "Panchang";
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .footer-social-link {
-    color: #232323;
-    text-decoration: none;
-    margin-bottom: 5px;
-    font-family: "supreme";
-    font-size: 1.25rem;
+  color: #232323;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-family: "supreme";
+  font-size: 1.25rem;
 }
 
 .footer-social-link:hover {
-    color: #603363;
+  color: #603363;
 }
 
 .footer-center {
-    flex: 1;
-    margin-top: 50px;
+  flex: 1;
+  margin-top: 50px;
 }
 
 .footer-center-column {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-center h2 {
-    font-family: "Panchang";
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #232323;
+  font-family: "Panchang";
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #232323;
 }
 
 .footer-center ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-center li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-center a {
-    color: #232323;
-    font-family: "Supreme";
-    text-decoration: none;
+  color: #232323;
+  font-family: "Supreme";
+  text-decoration: none;
 }
 
 .footer-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer-right button {
-    background-color: #f8f5f2;
-    color: #232323;
-    padding: 10px 20px;
-    border: 1px solid #232323;
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: "Panchang";
-    font-size: 1em;
-    margin-bottom: 0;
-    transition: all ease 0.3s;
+  background-color: #f8f5f2;
+  color: #232323;
+  padding: 10px 20px;
+  border: 1px solid #232323;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: "Panchang";
+  font-size: 1em;
+  margin-bottom: 0;
+  transition: all ease 0.3s;
 }
 
 .footer-right button:hover {
-    background-color: #232323;
-    color: #f8f5f2;
+  background-color: #232323;
+  color: #f8f5f2;
 }
 
 .footer-email {
-    font-family: "Supreme";
-    font-size: 0.8rem;
-    color: #232323;
-    text-align: center;
+  font-family: "Supreme";
+  font-size: 0.8rem;
+  color: #232323;
+  text-align: center;
 }
