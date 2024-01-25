@@ -132,15 +132,23 @@ nav a:hover {
 }
 
 .cta-button {
+  font-family: "Supreme";
   padding: 10px 20px;
   border: 1px solid #232323;
   border-radius: 15px;
   cursor: pointer;
+  transition: 1s ease;
+}
+
+.cta-button:hover {
+  background-color: #232323;
+  color: #f8f5f2;
 }
 
 .hero {
   padding: 50px 0;
   text-align: left;
+  height: 80vh;
 }
 
 .hero-content {
@@ -150,6 +158,7 @@ nav a:hover {
   justify-content: space-between;
   max-width: 100%;
   margin: 0 20px;
+  z-index: 1;
 }
 
 .hero-content p {
@@ -165,7 +174,8 @@ nav a:hover {
   font-family: "Supreme";
   font-size: 1.5rem;
   font-weight: 100;
-  margin-bottom: -70px;
+  margin-bottom: -50px;
+  margin-top: 10rem;
 }
 
 .hero-content h1 {
@@ -202,6 +212,82 @@ nav a:hover {
 
   100% {
     background-position: 0% 0%;
+  }
+}
+
+.contact-hero {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f8f5f2;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero-image img {
+  height: 80vh;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-hero-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+  font-family: "Panchang";
+}
+
+.contact-form {
+  text-align: left;
+  font-family: "Supreme";
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #232323;
+  border: 1px solid transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.contact-form button:hover {
+  border: 1px solid #232323;
+  background-color: #f8f5f2;
+  color: #232323;
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-hero-text {
+    padding: 20px;
   }
 }
 
@@ -467,7 +553,6 @@ nav a:hover {
   padding: 10px 20px;
   border: 1px solid #f8f5f2;
   border-radius: 15px;
-  cursor: pointer;
   font-family: "Panchang";
   font-size: 1em;
 }
@@ -579,4 +664,30 @@ nav a:hover {
   font-size: 0.8rem;
   color: #232323;
   text-align: center;
+}
+
+.loading-screen {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f5f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Added to center-align in both directions */
+  z-index: 999;
+}
+
+.loader-container {
+  text-align: center;
+}
+
+#company-name {
+  font-family: "Panchang", sans-serif; /* Changed font-family to "Panchang" */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #232323;
 }
