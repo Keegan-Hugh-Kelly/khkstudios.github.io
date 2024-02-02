@@ -691,3 +691,8 @@ nav a:hover {
   margin-top: 20px;
   color: #232323;
 }
+
+#message {
+  height: 150px;
+  width: 100%;
+}
